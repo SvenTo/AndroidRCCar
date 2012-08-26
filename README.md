@@ -7,17 +7,21 @@ More Info:
 http://androidrccar.sven.to/
 
 System Design
-=======
+-------
 
 System Design:
-![System Design](http://androidrccar.sven.to/downloads/system.png)
-Android App Design:
-![Android App Design](http://androidrccar.sven.to/style/images/architecture.png)
 
-More: https://github.com/SvenTo/AndroidRCCar/_SoftwareDesign
+![System Design](http://androidrccar.sven.to/downloads/system.png)
+
+Android App Design:
+
+![Android App Design](http://androidrccar.sven.to/downloads/architecture.png)
+
+
+For mor diagramm see: /_SoftwareDesign/
 
 Live
-=======
+-------
 
 ![Screenshot 1](http://androidrccar.sven.to/style/images/top.jpg) ![Screenshot 2](http://androidrccar.sven.to/style/images/androidrccar.jpg)
 

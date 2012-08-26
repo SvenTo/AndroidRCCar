@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_for_notification">There was an error. Click for more information.</string>
+    
+    <string name="error_protocol_version_not_match">The car implements a different protocol version (%2$d) than the supported one (%1$d).</string>
+    <string name="error_accessory_connection_problem">There is a problem with the connection to the car:\n%s</string>
+    <string name="error_accessory_send_error">The car send an error:\n%s</string>
+    <string name="error_accessory_battery_empty">The car\'s battery is empty. Please turn of the car and charge the battery.</string>
+</resources>

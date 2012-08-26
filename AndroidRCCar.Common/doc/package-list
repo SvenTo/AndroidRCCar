@@ -1,0 +1,12 @@
+to.sven.androidrccar.common.communication.contract
+to.sven.androidrccar.common.communication.impl
+to.sven.androidrccar.common.communication.model
+to.sven.androidrccar.common.exception
+to.sven.androidrccar.common.framework
+to.sven.androidrccar.common.logic.contract
+to.sven.androidrccar.common.logic.handler
+to.sven.androidrccar.common.logic.impl
+to.sven.androidrccar.common.model
+to.sven.androidrccar.common.service.contract
+to.sven.androidrccar.common.service.impl
+to.sven.androidrccar.common.utils

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <ImageView android:src="@drawable/ic_launcher" android:contentDescription="@string/action_about" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:padding="10dip"></ImageView>
+	<TextView android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content" android:layout_gravity="center" android:text="@string/generic_app_name" android:gravity="center"></TextView>
+    <TextView android:layout_width="wrap_content" android:id="@+id/infoTextVersion" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_gravity="center" android:gravity="center"></TextView>
+    
+     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/infoAuthor" android:text="@string/info_author" android:layout_gravity="center" android:gravity="center" android:autoLink="web" android:linksClickable="true"></TextView>
+     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/info_license" android:layout_gravity="center" android:gravity="center"></TextView>
+     <Button android:layout_width="wrap_content" android:layout_gravity="center" android:layout_height="wrap_content" android:id="@+id/info_ok_btn" android:layout_margin="8dip" android:text="@android:string/ok"></Button>
+    
+</LinearLayout>

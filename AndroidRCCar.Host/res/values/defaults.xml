@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="host_service_notification_id"/>
+    <string name="app_version">1.0</string>
+    <string name="port_preference_key">Port</string>
+</resources>

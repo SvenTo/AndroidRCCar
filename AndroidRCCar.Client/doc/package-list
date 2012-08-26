@@ -1,0 +1,11 @@
+de.kp.rtspcamera
+to.sven.androidrccar.client
+to.sven.androidrccar.client.framework
+to.sven.androidrccar.client.logic.contract
+to.sven.androidrccar.client.logic.handler
+to.sven.androidrccar.client.logic.impl
+to.sven.androidrccar.client.presentation
+to.sven.androidrccar.client.presentation.view
+to.sven.androidrccar.client.service.contract
+to.sven.androidrccar.client.service.impl
+to.sven.androidrccar.common

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="private" author="true" classpath="/home/sven/svn.dsi8.de/Hochschule/Bachelor/sven/Development/Sources/AndroidRCCar.Common/libs/jackson-databind-2.0.2.jar:/opt/android-sdk-linux/tools/support/annotations.jar:/home/sven/svn.dsi8.de/Hochschule/Bachelor/sven/Development/Sources/AndroidRCCar.Common/libs/jackson-annotations-2.0.2.jar:/home/sven/svn.dsi8.de/Hochschule/Bachelor/sven/Development/Sources/AndroidRCCar.Common/libs/jackson-core-2.0.2.jar:/home/sven/svn.dsi8.de/Hochschule/Bachelor/sven/Development/Sources/AndroidRCCar.Common/bin/androidrccar.common.jar:/home/sven/svn.dsi8.de/Hochschule/Bachelor/sven/Development/Sources/AndroidRCCar.Common/bin/classes:libs/AndroidMockRuntime.jar" destdir="doc" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="to.sven.androidrccar.common.communication.test.model,to.sven.androidrccar.test,to.sven.androidrccar.common.logic.test" source="1.6" sourcepath="gen:src" splitindex="true" use="true" version="true"/>
+    </target>
+</project>

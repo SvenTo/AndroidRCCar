@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>    
+    <string name="camera_enabled_title_pref">Show Camera Stream</string>    
+    <string name="camera_enabled_sum_pref">Shows a live stream from the Hosts camera.</string>
+</resources>

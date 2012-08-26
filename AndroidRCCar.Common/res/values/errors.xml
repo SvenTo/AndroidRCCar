@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_for_notification">There was an error. Click for more information.</string>
+    <string name="error_dialog_title">Sorry, there was an error</string>
+
+    <string name="error_unspecified">Unspecified error occoured:\n%s</string>
+</resources>

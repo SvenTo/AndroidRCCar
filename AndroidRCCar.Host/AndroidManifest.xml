@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="to.sven.androidrccar.host"
+    android:versionCode="1"
+    android:versionName="@string/version" >
+
+    <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="15" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.usb.accessory" />
+	<uses-feature android:name="android.hardware.camera" />
+    
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+		<uses-library android:name="com.android.future.usb.accessory" />
+        <activity
+            android:name=".presentation.UnconnectedActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 
+        	Helper Activity that delegates the USB_ACCESSORY_ATTACHED intent to the service.
+        	This is necessary, because the intent can only received by an activity and not by an service/broadcast receiver:
+        	See: http://stackoverflow.com/questions/11098332/usb-accessory-catch-usb-accessory-attached-by-intent-filter-of-service
+        -->
+        <activity
+            android:name=".presentation.AccessoryAttachedActivity"
+            android:launchMode="singleInstance" >
+			<intent-filter>
+				<action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"/>
+			</intent-filter>
+			<meta-data android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" android:resource="@xml/accessory_filter"/>
+        </activity>
+        <activity
+            android:name=".presentation.WaitForOtherPhoneActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".presentation.ConnectedActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".presentation.HostPreferencesActivity"
+            android:label="@string/preferences" >
+        </activity>
+        <service android:name=".controller.HostService" >
+
+        </service>
+        
+        <activity
+            android:name="de.kp.rtspcamera.RtspNativeCodecsCamera"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTask" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroidRCCar - Client</string>
+    <string name="app_version">1.0</string>
+
+    <string name="connect">Connect</string>
+
+    <string name="welcome">Welcome, please enter the address of the host and the password:</string>
+    <string name="inputs_invalid">Please enter a valid hostname. You must enter a hostname or IP adress. A port can be added after a \':\'.</string>
+    
+    <string name="remember_settings">Remember me</string>
+	<string name="hostname">Hostname/IP</string>
+	<string name="password">Password</string>
+	
+    <string name="connecting">Connecting&#8230;</string>
+    
+    
+    <string name="north">N</string>
+    <string name="meter">m</string>
+    <string name="meterpersecound">m/s</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="private" author="true" classpath="/opt/android-sdk-linux/tools/support/annotations.jar:libs/jackson-core-2.0.2.jar:libs/jackson-databind-2.0.2.jar:libs/jackson-annotations-2.0.2.jar" destdir="doc" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="to.sven.androidrccar.arduino.test" source="1.6" sourcepath="src:gen" splitindex="true" use="true" version="true"/>
+    </target>
+</project>

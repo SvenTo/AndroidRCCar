@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+                 <PreferenceCategory android:title="@string/pref_connection_title">
+                     <to.sven.androidrccar.host.presentation.IntEditTextPreference 
+	                        android:title="@string/pref_port_title"
+	                        android:defaultValue="4253"
+	                        android:summary="@string/pref_port_sum"
+	                        android:key="Port"
+	                        android:numeric="integer"
+                         />
+                     <EditTextPreference
+	                        android:title="@string/pref_password_title"
+	                        android:summary="@string/pref_password_sum"
+	                        android:key="Password"
+	                        android:defaultValue="please_change"
+                         />
+                 </PreferenceCategory>
+                 <PreferenceCategory android:title="@string/pref_share_title">
+	                 <CheckBoxPreference
+	                        android:title="@string/pref_share_location_title"
+	                        android:defaultValue="true"
+	                        android:summary="@string/pref_share_location_sum"
+	                        android:key="ShareLocation" />
+	                 <CheckBoxPreference
+	                        android:title="@string/pref_share_bearing_title"
+	                        android:defaultValue="true"
+	                        android:summary="@string/pref_share_bearing_sum"
+	                        android:key="ShareBearing" />
+	                 <CheckBoxPreference
+	                        android:title="@string/pref_share_speed_title"
+	                        android:defaultValue="true"
+	                        android:summary="@string/pref_share_speed_sum"
+	                        android:key="ShareSpeed" />
+	                 <CheckBoxPreference
+	                        android:title="@string/pref_share_camera_title"
+	                        android:defaultValue="true"
+	                        android:summary="@string/pref_share_camera_sum"
+	                        android:key="ShareCamera" />
+	                 <CheckBoxPreference
+	                        android:title="@string/pref_share_rotatecamera_title"
+	                        android:defaultValue="true"
+	                        android:summary="@string/pref_share_rotatecamera_sum"
+	                        android:key="CanRotateCamera" />
+				</PreferenceCategory>
+</PreferenceScreen>

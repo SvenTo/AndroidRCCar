@@ -1,0 +1,10 @@
+<factorypath>
+    <factorypathentry kind="WKSPJAR" id="/AndroidRCCar.Test/mock/AndroidMockGenerator.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="ANDROIDRCCAR_TEST" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="ANDROID_10_RUNTIME" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="ANDROIDRCCAR_COMMON" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="WKSPJAR" id="/AndroidRCCar.Common/libs/jackson-annotations-2.0.2.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="WKSPJAR" id="/AndroidRCCar.Common/libs/jackson-core-2.0.2.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="WKSPJAR" id="/AndroidRCCar.Common/libs/jackson-databind-2.0.2.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="WKSPJAR" id="/AndroidRCCar.Test/mock/android_framework_mocks.jar" enabled="true" runInBatchMode="false"/>
+</factorypath>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroidRCCar.Arduino.Test</string>
+    <string name="run_tests">Run tests</string>
+    <string name="test_results">Test Results:</string>
+    <string name="title">Title:</string>
+    <string name="count">Tests:</string>
+    <string name="accessory_connected">Conntected to Accessory</string>
+    <string name="accessory_not_connected">Not conntected to Accessory</string>
+    <string name="not_loaded">No test loaded</string>
+    <string name="status">Status:</string>
+    <string name="not_runned">Tests not runned.</string>
+	<string name="error">Error during initialization:</string>
+</resources>

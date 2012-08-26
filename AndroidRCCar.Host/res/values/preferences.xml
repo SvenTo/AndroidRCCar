@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> 
+    <string name="pref_connection_title">Connection Parameter</string>    
+    <string name="pref_share_title">Share Features</string>    
+       
+    <string name="pref_port_title">Port</string>    
+    <string name="pref_port_sum">The port where the server should listen.</string>
+    <string name="pref_password_title">Password</string>    
+    <string name="pref_password_sum">The password for authentication.</string>
+    <string name="pref_share_location_title">Location</string>    
+    <string name="pref_share_location_sum">If enabled, the location of the car will be send to the client.</string>
+    <string name="pref_share_bearing_title">Bearing</string>    
+    <string name="pref_share_bearing_sum">If enabled, the bearing of the car will be send to the client.</string>
+    <string name="pref_share_speed_title">Speed</string>    
+    <string name="pref_share_speed_sum">If enabled, the speed of the car will be send to the client.</string>
+    <string name="pref_share_camera_title">Camera Stream</string>    
+    <string name="pref_share_camera_sum">If enabled, a live stream from the camera will be send.</string>
+    <string name="pref_share_rotatecamera_title">Rotate Camera</string>    
+    <string name="pref_share_rotatecamera_sum">Allows the client to rotate the camera.</string>
+</resources>

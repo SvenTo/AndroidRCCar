@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidRCCar - Host</string>
+    <string name="sub_app_name">Host</string>
+    <string name="version">1.0</string>
+    
+    <string name="notification_ticker">AndroidRCCar Host is running</string>
+    
+    <string name="connect_car">Please connect this Android device to the car.</string>
+    <string name="connect_other_phone">You can connect your secound phone now to:</string>
+    <string name="wait_for_other_device">Waiting for other phone.</string>
+    <string name="connection_lost">Connection to other phone is lost. Waiting for new connection.</string>
+    
+    <string name="net_unconnected">No phone connected.</string>
+    <string name="connected">Phone is connected. Have fun!</string>
+    
+    <string name="send_connection_details">Send Connection Link to &#8230;</string>
+    
+    <string name="send_via">Send via</string>
+    <string name="send_connection_details_subject">AndroidRCCar Connection Details</string>
+    
+    <string name="quit">Quit</string>
+</resources>

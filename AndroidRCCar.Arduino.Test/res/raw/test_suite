@@ -1,0 +1,122 @@
+{
+   "title":"AndroidRCCar TestSuite",
+   "waitBeforeReadResponse":500,
+   "waitBetweenTests":2500,
+   "tests":[
+      {
+         "title":"GET_PROTOCOL_VERSION",
+         "sendData":"02  00 00 00 00 00 00 00 00 00 00 00 00 00 00  6D",
+         "exceptedResponseData":"04  00 01 00 00 00 00 00 00 00 00 00 00 00 00  4E"
+      },
+      {
+         "title":"GET_FEATURES",
+         "sendData":"03  00 00 00 00 00 00 00 00 00 00 00 00 00 00  D8",
+         "exceptedResponseData":"05  07 2F A4 3F FF 00 00 7F FF 00 00 00 00 00  22"
+      },
+      
+      {
+         "title":"ADJUST_SPEED - full forward speed",
+         "sendData":"05  7F FF 00 00 00 00 00 00 00 00 00 00 00 00  54",
+         "exceptedResponseData":"01  00 00 00 00 00 00 00 00 00 00 00 00 00 00  B5"
+      },
+      
+      {
+         "title":"TURN_CAR - full left",
+         "sendData":"04  80 00 00 00 00 00 00 00 00 00 00 00 00 00  03",
+         "exceptedResponseData":"01  00 00 00 00 00 00 00 00 00 00 00 00 00 00  B5"
+      },
+      {
+         "title":"TURN_CAR - half left",
+         "sendData":"04  C0 00 00 00 00 00 00 00 00 00 00 00 00 00  EC",
+         "exceptedResponseData":"01  00 00 00 00 00 00 00 00 00 00 00 00 00 00  B5"
+      },
+      {
+         "title":"TURN_CAR - full right",
+         "sendData":"04  7F FF 00 00 00 00 00 00 00 00 00 00 00 00  E1",
+         "exceptedResponseData":"01  00 00 00 00 00 00 00 00 00 00 00 00 00 00  B5"
+      },
+      {
+         "title":"TURN_CAR - half right",
+         "sendData":"04  3F FF 00 00 00 00 00 00 00 00 00 00 00 00  0E",
+         "exceptedResponseData":"01  00 00 00 00 00 00 00 00 00 00 00 00 00 00  B5"
+      },
+      {
+         "title":"TURN_CAR - no rotation",
+         "sendData":"04  00 00 00 00 00 00 00 00 00 00 00 00 00 00  DA",
+         "exceptedResponseData":"01  00 00 00 00 00 00 00 00 00 00 00 00 00 00  B5"
+      },
+      
+      {
+         "title":"ADJUST_SPEED - full backward speed",
+         "sendData":"05  80 00 00 00 00 00 00 00 00 00 00 00 00 00  B6",
+         "exceptedResponseData":"01  00 00 00 00 00 00 00 00 00 00 00 00 00 00  B5"
+      },
+      {
+         "title":"ADJUST_SPEED - half forward speed",
+         "sendData":"05  3F FF 00 00 00 00 00 00 00 00 00 00 00 00  BB",
+         "exceptedResponseData":"01  00 00 00 00 00 00 00 00 00 00 00 00 00 00  B5"
+      },
+      {
+         "title":"ADJUST_SPEED - half backward speed",
+         "sendData":"05  C0 00 00 00 00 00 00 00 00 00 00 00 00 00  59",
+         "exceptedResponseData":"01  00 00 00 00 00 00 00 00 00 00 00 00 00 00  B5"
+      },
+      {
+         "title":"ADJUST_SPEED - stop",
+         "sendData":"05  00 00 00 00 00 00 00 00 00 00 00 00 00 00  6F",
+         "exceptedResponseData":"01  00 00 00 00 00 00 00 00 00 00 00 00 00 00  B5"
+      },
+      
+      {
+         "title":"ROTATE_CAM - rotate full left, half up",
+         "sendData":"06  80 00 3F FF 00 00 00 00 00 00 00 00 00 00  85",
+         "exceptedResponseData":"01  00 00 00 00 00 00 00 00 00 00 00 00 00 00  B5"
+      },
+      {
+         "title":"ROTATE_CAM - rotate full right, half up",
+         "sendData":"06  7F FF 3F FF 00 00 00 00 00 00 00 00 00 00  67",
+         "exceptedResponseData":"01  00 00 00 00 00 00 00 00 00 00 00 00 00 00  B5"
+      },
+      {
+         "title":"ROTATE_CAM - rotate half left, full up",
+         "sendData":"06  C0 00 7F FF 00 00 00 00 00 00 00 00 00 00  4F",
+         "exceptedResponseData":"01  00 00 00 00 00 00 00 00 00 00 00 00 00 00  B5"
+      },
+      {
+         "title":"ROTATE_CAM - rotate half right, full up",
+         "sendData":"06  3F FF 7F FF 00 00 00 00 00 00 00 00 00 00  AD",
+         "exceptedResponseData":"01  00 00 00 00 00 00 00 00 00 00 00 00 00 00  B5"
+      },
+      {
+         "title":"ROTATE_CAM - rotate forward",
+         "sendData":"06  00 00 00 00 00 00 00 00 00 00 00 00 00 00  B7",
+         "exceptedResponseData":"01  00 00 00 00 00 00 00 00 00 00 00 00 00 00  B5"
+      },
+      
+      {
+         "title":"GET_BATTERY_STATE",
+         "sendData":"07  00 00 00 00 00 00 00 00 00 00 00 00 00 00  02",
+         "printResponseOnly":true
+      },
+      {
+         "title":"INVALID_COMMAND_ERROR - checksum",
+         "sendData":"01  00 00 00 00 00 00 00 00 00 00 00 00 00 00  00",
+         "exceptedResponseData":"02  00 01 00 00 00 00 00 00 00 00 00 00 00 00  F9"
+      },
+      {
+         "title":"INVALID_COMMAND_ERROR - length",
+         "sendData":"01  00 00 00 00 00 00 00 00 00 00 00 00 00 00  ",
+         "exceptedResponseData":"02  00 01 00 00 00 00 00 00 00 00 00 00 00 00  F9"
+      },
+      {
+         "title":"UNKOWN_COMMAND_ERROR",
+         "sendData":"42  00 00 00 00 00 00 00 00 00 00 00 00 00 00  EE",
+         "exceptedResponseData":"02  00 02 00 00 00 00 00 00 00 00 00 00 00 00  42"
+      },
+      {
+         "title":"NOOP",
+         "sendData":"01  00 00 00 00 00 00 00 00 00 00 00 00 00 00  B5",
+         "exceptedResponseData":"01  00 00 00 00 00 00 00 00 00 00 00 00 00 00  B5"
+      }
+   ]
+}

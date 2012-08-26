@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="private" author="true" classpath="/home/sven/svn.dsi8.de/Hochschule/Bachelor/sven/Development/Sources/AndroidRCCar.Common/libs/jackson-databind-2.0.2.jar:/opt/android-sdk-linux/tools/support/annotations.jar:/home/sven/svn.dsi8.de/Hochschule/Bachelor/sven/Development/Sources/AndroidRCCar.Common/libs/jackson-annotations-2.0.2.jar:/home/sven/svn.dsi8.de/Hochschule/Bachelor/sven/Development/Sources/AndroidRCCar.Common/libs/jackson-core-2.0.2.jar:/home/sven/svn.dsi8.de/Hochschule/Bachelor/sven/Development/Sources/AndroidRCCar.Common/bin/androidrccar.common.jar:/home/sven/svn.dsi8.de/Hochschule/Bachelor/sven/Development/Sources/RtspCamera/bin/rtspcamera.jar:/home/sven/svn.dsi8.de/Hochschule/Bachelor/sven/Development/Sources/AndroidRCCar.Common/bin/classes" destdir="doc" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="to.sven.androidrccar.client.framework,to.sven.androidrccar.common,to.sven.androidrccar.client.presentation,to.sven.androidrccar.client.logic.contract,to.sven.androidrccar.client.logic.handler,de.kp.rtspcamera,to.sven.androidrccar.client.service.contract,to.sven.androidrccar.client.service.impl,to.sven.androidrccar.client.presentation.view,to.sven.androidrccar.client.logic.impl" source="1.6" sourcefiles="gen/to/sven/androidrccar/client/BuildConfig.java,gen/to/sven/androidrccar/client/R.java" sourcepath="src:gen" splitindex="true" use="true" version="true">
+            <link href="file:/home/sven/svn.dsi8.de/Hochschule/Bachelor/sven/Development/Sources/AndroidRCCar.Common/doc/"/>
+        </javadoc>
+    </target>
+</project>

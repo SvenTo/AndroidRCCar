@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#006F00" >
+    
+    <com.orangelabs.rcs.service.api.client.media.video.VideoSurfaceView
+        android:id="@+id/video_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    
+    <to.sven.androidrccar.client.presentation.view.VirtualJoystickView
+        android:id="@+id/joystickView"
+        android:layout_width="wrap_content"
+        android:layout_height="120dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+    
+    <to.sven.androidrccar.client.presentation.view.BatteryView
+        android:id="@+id/batteryView"
+        android:layout_width="60dip"
+        android:layout_height="30dip"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp" />
+
+    <to.sven.androidrccar.client.presentation.view.DistanceView
+        android:id="@+id/distanceView"
+        android:layout_width="60dip"
+        android:layout_height="120dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" />
+
+    <to.sven.androidrccar.client.presentation.view.BearingOfCarView
+        android:id="@+id/bearingOfCarView"
+        android:layout_width="fill_parent"
+        android:layout_height="20dip"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp" />
+
+    <TextView
+        android:id="@+id/speedView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/batteryView"
+        android:layout_below="@+id/batteryView"
+        android:layout_marginTop="14dp"
+        android:text="@string/meterpersecound"
+         />
+    
+</RelativeLayout>

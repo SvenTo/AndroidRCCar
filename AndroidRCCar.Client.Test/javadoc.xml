@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="private" author="true" classpath="/opt/android-sdk-linux/tools/support/annotations.jar:libs/AndroidMockRuntime.jar:/home/sven/svn.dsi8.de/Hochschule/Bachelor/sven/Development/Sources/AndroidRCCar.Test/mock/AndroidMockGenerator.jar:/home/sven/svn.dsi8.de/Hochschule/Bachelor/sven/Development/Sources/AndroidRCCar.Client/bin/classes:/home/sven/svn.dsi8.de/Hochschule/Bachelor/sven/Development/Sources/AndroidRCCar.Common/bin/classes" destdir="doc" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="to.sven.androidrccar.client.test.logic.handler,to.sven.androidrccar.client.test.logic.impl" source="1.6" sourcefiles="gen/to/sven/androidrccar/client/test/BuildConfig.java,gen/to/sven/androidrccar/client/test/R.java" sourcepath="gen:.apt_generated:src" splitindex="true" use="true" version="true">
+            <link href="file:/home/sven/svn.dsi8.de/Hochschule/Bachelor/sven/Development/Sources/AndroidRCCar.Client/doc/"/>
+            <link href="file:/home/sven/svn.dsi8.de/Hochschule/Bachelor/sven/Development/Sources/AndroidRCCar.Common/doc/"/>
+        </javadoc>
+    </target>
+</project>

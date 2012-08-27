@@ -25,4 +25,6 @@ Live
 
 ![Screenshot 1](http://androidrccar.sven.to/style/images/top.jpg) ![Screenshot 2](http://androidrccar.sven.to/style/images/androidrccar.jpg)
 
+![Screenshot 3](http://androidrccar.sven.to/style/images/ggle.jpg)
+
 Video coming soon...

@@ -27,4 +27,6 @@ Live
 
 ![Screenshot 3](http://androidrccar.sven.to/style/images/ggle.jpg)
 
-Video coming soon...
+Video
+-------
+http://www.youtube.com/watch?v=mPUK-vqFtEA

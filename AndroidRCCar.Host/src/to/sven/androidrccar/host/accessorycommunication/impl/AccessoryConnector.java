@@ -265,17 +265,17 @@ public class AccessoryConnector implements IAccessoryConnector {
 		@Override
 		public void protocolVersionNotMatch(short hostVersion,
 				short microControllerVersion) {
-			handleError(R.string.error_protocol_version_not_match, hostVersion, microControllerVersion);
+			handleError(to.sven.androidrccar.host.R.string.error_protocol_version_not_match, hostVersion, microControllerVersion);
 		}
 		
 		@Override
 		public void errorReceived(String message) {
-			handleError(R.string.error_accessory_send_error, message);
+			handleError(to.sven.androidrccar.host.R.string.error_accessory_send_error, message);
 		}
 		
 		@Override
 		public void connectionProblem(AccessoryConnectionProblemException ex) {
-			handleError(R.string.error_accessory_connection_problem, ex);
+			handleError(to.sven.androidrccar.host.R.string.error_accessory_connection_problem, ex);
 		}
 		
 		/**
@@ -298,7 +298,7 @@ public class AccessoryConnector implements IAccessoryConnector {
 		
 		@Override
 		public void batteryNearEmpty() {
-			handleError(R.string.error_accessory_battery_empty);
+			handleError(to.sven.androidrccar.host.R.string.error_accessory_battery_empty);
 		}
 	}; 
 }

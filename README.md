@@ -10,7 +10,7 @@ Short overview about the directories
 -------
 - Android Software
 	- (Each directory is an Eclipse Project)
-	- [AndroidRCCar.Client/][AndroidRCCar.Client/]
+	- [AndroidRCCar.Client/](AndroidRCCar.Client/)
 		- Client Software -- The "Remote Controller"
 	- [AndroidRCCar.Host/](AndroidRCCar.Host/)
 		- Host Software for the device on the car
@@ -42,35 +42,39 @@ Short overview about the directories
 		- Fixed ADK-Libraries
 		- From: http://developer.android.com/tools/adk/adk.html
 		- (Link or copy to library/ in your Android IDE installation)
-	- See also: /_SoftwareDesign/AndroidRCCarArduinoClass.pdf
+	- See also: [Class Diagram](/_SoftwareDesign/AndroidRCCarArduinoClass.pdf)
 
 Getting Started
 -------
 
-You need:
-- An Arduino ADK Board
+##### You need:
+- An Arduino ADK board
 	- like this: http://arduino.cc/en/Main/ArduinoBoardADK
 - A motor driver
 	- like this: http://www.adafruit.com/products/81
 - Some robotic platform and motors
 	- like this: http://www.dfrobot.com/index.php?route=product/product&product_id=97
-- Two Android Devices
+- Two Android devices
 	- Android 2.3.3 or newer
 	- The host needs ADK support
 	
-Microcontroller Software:
+##### Microcontroller Software:
 - Link or copy these Libraries to library/ in your Android IDE installation:
 	- [AndroidRCCar.Arduino/AndriodRCCar/](AndroidRCCar.Arduino/AndriodRCCar/)
 	- [ADKArduinoLibs/](ADKArduinoLibs/)
 	- ( [AndroidRCCar.Arduino/AndroidRCReferenceCar/](AndroidRCCar.Arduino/AndroidRCReferenceCar/) )
 - Implement the abstract class AndroidRCCarCommunication
 	- See [AndroidRCCar.Arduino/AndroidRCReferenceCar/](AndroidRCCar.Arduino/AndroidRCReferenceCar/) for an example implementation
+	- And [AndroidRCCar.Arduino/AndriodRCCarSketch/](AndroidRCCar.Arduino/AndriodRCCarSketch/) for an example sketch
 - Compile and Upload
 	- You can test your software with the [AndroidRCCar.Arduino.Test](_APK/AndroidRCCar.Arduino.Test.apk) Android Application
 		- Note: The test suite is optimized for the reference car, so if you have other features configured the command GET_FEATURES will fail as example
 		- The test suite is located here [AndroidRCCar.Arduino.Test/res/raw/test_suite](AndroidRCCar.Arduino.Test/res/raw/test_suite)
-
-Android Software:
+- The protocol is documented here:
+	- [RequestCommands](AndroidRCCar.Host/src/to/sven/androidrccar/host/accessorycommunication/model/RequestCommand.java)
+	- [ResponseMessages](AndroidRCCar.Host/src/to/sven/androidrccar/host/accessorycommunication/model/ResponseMessage.java)
+	
+##### Android Software:
 - Note: There are precompiled binaries in [_APK/](_APK/) 
 - Import the Eclipse projectes:
 	- [AndroidRCCar.Client/][AndroidRCCar.Client/]
@@ -78,6 +82,7 @@ Android Software:
 	- [AndroidRCCar.Common/](AndroidRCCar.Common/)
 	- [RtspCamera/](RtspCamera/)
 	- and the *.Test projects (optional)
+- See source code documentation for further information
 - Have fun!
 
 System Design

@@ -20,7 +20,9 @@
 package to.sven.androidrccar.client.service.impl;
 
 import to.sven.androidrccar.client.service.contract.IVideoClientService;
+import to.sven.androidrccar.common.utils.AsyncTaskResult;
 
+import android.os.AsyncTask;
 import android.util.Log;
 
 import com.orangelabs.rcs.service.api.client.media.video.VideoSurfaceView;
@@ -66,10 +68,31 @@ public class VideoClientService implements IVideoClientService {
 			stop();
 		}
 		try {
-			renderer = new RtpVideoRenderer(url);
-			renderer.setVideoSurface(videoView);
-			renderer.open();
-			renderer.start();
+			new AsyncTask<String, Void, AsyncTaskResult<RtpVideoRenderer>>() {
+
+				@Override
+				protected AsyncTaskResult<RtpVideoRenderer> doInBackground(String... params) {
+					try {
+						return new AsyncTaskResult<RtpVideoRenderer>(new RtpVideoRenderer(params[0]));
+					} catch (Exception e) {
+						return new AsyncTaskResult<RtpVideoRenderer>(e);
+					}
+				}
+				
+				@Override
+				protected void onPostExecute(AsyncTaskResult<RtpVideoRenderer> result) {
+					if(result.getResult() != null) {
+						renderer = result.getResult();
+						renderer.setVideoSurface(videoView);
+						renderer.open();
+						renderer.start();
+					} else {
+						// TODO: This better?
+						Log.e(LOG_TAG, "playStream", result.getError());
+					}
+				}
+			}.execute(url);
+			
 		} catch (Exception e) {
 			Log.e(LOG_TAG, "playStream", e);
 		}

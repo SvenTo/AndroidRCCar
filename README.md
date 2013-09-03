@@ -59,7 +59,7 @@ Getting Started
 	- The host needs ADK support
 	
 ##### Microcontroller Software:
-- Link or copy these Libraries to library/ in your Android IDE installation:
+- Link or copy these libraries to library/ in your Android IDE installation:
 	- [AndroidRCCar.Arduino/AndriodRCCar/](AndroidRCCar.Arduino/AndriodRCCar/)
 	- [ADKArduinoLibs/](ADKArduinoLibs/)
 	- ( [AndroidRCCar.Arduino/AndroidRCReferenceCar/](AndroidRCCar.Arduino/AndroidRCReferenceCar/) )
@@ -68,7 +68,7 @@ Getting Started
 	- And [AndroidRCCar.Arduino/AndriodRCCarSketch/](AndroidRCCar.Arduino/AndriodRCCarSketch/) for an example sketch
 - Compile and Upload
 	- You can test your software with the [AndroidRCCar.Arduino.Test](_APK/AndroidRCCar.Arduino.Test.apk) Android Application
-		- Note: The test suite is optimized for the reference car, so if you have other features configured the command GET_FEATURES will fail as example
+		- Note: The test suite is optimized for the reference car. So if you have other features configured as there, the command GET_FEATURES will fail, as example
 		- The test suite is located here [AndroidRCCar.Arduino.Test/res/raw/test_suite](AndroidRCCar.Arduino.Test/res/raw/test_suite)
 - The protocol is documented here:
 	- [RequestCommands](AndroidRCCar.Host/src/to/sven/androidrccar/host/accessorycommunication/model/RequestCommand.java)

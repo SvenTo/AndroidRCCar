@@ -44,7 +44,10 @@ public class RtspNativeCodecsCamera extends Activity {
 
 		Log.d(TAG, "onCreate");
 		
-		serverPort = getIntent().getExtras().getInt(SERVER_PORT_ID);
+		Bundle extras = getIntent().getExtras();
+		if(extras != null) {
+			serverPort = getIntent().getExtras().getInt(SERVER_PORT_ID);
+		}
 		
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		Window win = getWindow();
